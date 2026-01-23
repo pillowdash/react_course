@@ -1,0 +1,14 @@
+.app-container {
+    max-width: 600px;
+    margin-left: auto; /* to ensure the App is centered */
+    margin-right: auto;
+
+    height: 100vh; /* 100% of the height of the browser (will fit in entire browser) */
+    display: flex;
+    flex-direction: column; /* makes the flex box positioned vertically instead of default horizontal */
+}
+
+.welcome-message {
+    color: rgb(200, 200, 200);
+    text-align: center;
+}

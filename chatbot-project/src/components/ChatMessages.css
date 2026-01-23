@@ -1,0 +1,6 @@
+.chat-messages-container {
+    flex-grow: 1; /* pushes the chat input go to the bottom */
+    margin-top: 20px;
+    overflow: scroll; /* makes this container go below the chat input */
+    scrollbar-width: none;
+}/* if there are too many messages, we are now able to scroll to see them all*/
