@@ -147,3 +147,8 @@
   width: 26px;
   text-align: center;
 }
+
+/* Styles the orders link so when it's active, it will be underlined */
+.header .orders-link.active {
+  text-decoration: underline;
+}

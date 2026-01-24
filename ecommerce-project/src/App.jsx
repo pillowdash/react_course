@@ -3,7 +3,19 @@ import { HomePage } from './Pages/HomePage.jsx'
 import { CheckoutPage } from './Pages/checkout/Checkout.jsx'
 import { OrderPage } from './Pages/OrderPage.jsx'
 import { TrackingPage } from './Pages/TrackingPage.jsx'
+import { Header } from './components/Header.jsx'
 import './App.css'
+
+function ErrorNotFound() {
+  return (
+    <>
+      <Header />
+      <div className="not-found">
+        Page not found
+      </div>
+    </>
+  );
+}
 
 function App() {
 
@@ -14,6 +26,7 @@ function App() {
         <Route path="checkout" element={<CheckoutPage />}></Route>
         <Route path="orders" element={<OrderPage />}></Route>
         <Route path="tracking" element={<TrackingPage />}></Route>
+        <Route path="*" element={<ErrorNotFound />}></Route>
       </Routes>
     </>
   )
